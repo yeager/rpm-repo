@@ -1,0 +1,82 @@
+name: Build RPMs from Debian packages
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y alien rpm
+      
+      - name: Download latest .deb packages
+        run: |
+          mkdir -p debs rpms
+          cd debs
+          
+          # Get package list from debian-repo
+          curl -s https://yeager.github.io/debian-repo/dists/stable/main/binary-all/Packages > packages.txt
+          
+          # Download each package
+          for pkg in l10n-lint l10n-lint-gtk po-translate po-diff tp-lint; do
+            url=$(grep -A20 "^Package: $pkg$" packages.txt | grep "^Filename:" | head -1 | awk '{print $2}')
+            if [ -n "$url" ]; then
+              echo "Downloading $pkg from $url"
+              curl -sLO "https://yeager.github.io/debian-repo/$url"
+            fi
+          done
+          
+          ls -la *.deb || echo "No .deb files downloaded"
+      
+      - name: Convert to RPM
+        run: |
+          cd debs
+          for deb in *.deb; do
+            if [ -f "$deb" ]; then
+              echo "Converting $deb to RPM..."
+              sudo alien --to-rpm --scripts "$deb"
+            fi
+          done
+          mv *.rpm ../rpms/ 2>/dev/null || true
+          ls -la ../rpms/
+      
+      - name: Update repository
+        run: |
+          # Remove old RPMs
+          rm -f packages/noarch/*.rpm
+          
+          # Copy new RPMs
+          mkdir -p packages/noarch
+          cp rpms/*.rpm packages/noarch/
+          
+          # Create repo metadata
+          cd packages/noarch
+          createrepo_c . 2>/dev/null || createrepo . 2>/dev/null || echo "createrepo not available"
+          
+          ls -la
+      
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet packages/; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add packages/
+          git commit -m "Update RPM packages from debian-repo"
+          git push
