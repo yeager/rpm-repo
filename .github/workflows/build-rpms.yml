@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: '0 */6 * * *'  # Every 6 hours
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -57,11 +60,7 @@ jobs:
           mkdir -p packages/noarch
           cp rpms/*.rpm packages/noarch/
           
-          # Create repo metadata
-          cd packages/noarch
-          createrepo_c . 2>/dev/null || createrepo . 2>/dev/null || echo "createrepo not available"
-          
-          ls -la
+          ls -la packages/noarch/
       
       - name: Check for changes
         id: changes
@@ -75,8 +74,14 @@ jobs:
       - name: Commit and push
         if: steps.changes.outputs.changed == 'true'
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add packages/
-          git commit -m "Update RPM packages from debian-repo"
+          git commit -m "Update RPM packages from debian-repo
+
+          - l10n-lint
+          - l10n-lint-gtk  
+          - po-translate
+          - po-diff
+          - tp-lint"
           git push
