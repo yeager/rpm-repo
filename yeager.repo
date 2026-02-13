@@ -1,5 +1,5 @@
 [yeager]
 name=Yeager's Translation Tools
-baseurl=https://yeager.github.io/rpm-repo/packages
+baseurl=https://yeager.github.io/rpm-repo
 enabled=1
 gpgcheck=0
