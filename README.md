@@ -88,8 +88,7 @@ sudo dnf install PACKAGE
 | firewall-manager | Firewall rule manager |
 | mqtt-dashboard | MQTT broker dashboard |
 | mqtt-inspector | MQTT message inspector |
-| packetlens | Network packet capture viewer |
-| pcap-viewer | Analyze pcap/pcapng network captures |
+| packetlens | Network packet capture viewer (pcap/pcapng) |
 | wifi-analyzer | Wi-Fi network analyzer |
 
 ### System Tools
