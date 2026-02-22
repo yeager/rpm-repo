@@ -20,7 +20,7 @@ gpgcheck=0
 
 ## Packages
 
-54 packages. Same apps as the [Debian repository](https://github.com/yeager/debian-repo) minus Debian-specific tools.
+55 packages. Same apps as the [Debian repository](https://github.com/yeager/debian-repo) minus Debian-specific tools.
 
 ## Author
 
