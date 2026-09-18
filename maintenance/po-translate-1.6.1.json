@@ -1,0 +1,8 @@
+{
+  "package": "po-translate",
+  "version": "1.6.1-1",
+  "source_commit": "ca705c90deedd46f531e34723b733b55e62dec1f",
+  "source_repository": "https://github.com/yeager/po-translate",
+  "sha256": "1599cb36acb97d6c514bbcf2db349a870566acc60fe3b1ccdda0d420bcf1bcfe",
+  "notes": "Fixes gettext and Qt plural translations, prevents catalog writes after provider or placeholder validation errors, and preserves obsolete PO entries."
+}
