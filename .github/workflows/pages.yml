@@ -19,6 +19,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
+      - name: Validate repository
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y zstd
+          python3 scripts/validate-repo.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
       

@@ -1,0 +1,53 @@
+{
+  "svlang": {
+    "version": "0.2.0",
+    "release": "2",
+    "commit": "d29fcbc33390fb87859b34698706e893b140b6a7",
+    "summary": "Swedish language tools for translators",
+    "license": "MIT AND LGPL AND CC-BY-SA-2.5",
+    "packages": {
+      "svlang-0.2.0-2.noarch.rpm": {
+        "sha256": "45c3d4adfdcb58f1b8922963f0b1288d06a421e20fe60c4405ab47be57a88ad7",
+        "size": 823081
+      },
+      "svlang_0.2.0-2_all.deb": {
+        "sha256": "0fab3992f58489cc050bbccad9315c28ab6a88b3c96c1d6a2e159186c36ac85e",
+        "size": 815180
+      }
+    }
+  },
+  "swedish-tm": {
+    "version": "20260918",
+    "release": "1",
+    "commit": "359390fce7a17db50de4722db14331cb9e9735b2",
+    "summary": "Swedish translation memory for open source software",
+    "license": "CC-BY-4.0",
+    "packages": {
+      "swedish-tm-20260918-1.noarch.rpm": {
+        "sha256": "5944335f4688df1d0ee11d60c9f670e1acaeb230e511343553094bc7203b9771",
+        "size": 30909493
+      },
+      "swedish-tm_20260918-1_all.deb": {
+        "sha256": "d14081b4ffdae81b02bb9bb582ece01efa4d14c76a95078dd0f092ee62c60ecb",
+        "size": 35619592
+      }
+    }
+  },
+  "swedish-foss-terminology": {
+    "version": "20260918",
+    "release": "1",
+    "commit": "73d68c8531a83a8429214fb9fb37cca5b5160f6a",
+    "summary": "Swedish terminology for open source software",
+    "license": "CC-BY-4.0",
+    "packages": {
+      "swedish-foss-terminology-20260918-1.noarch.rpm": {
+        "sha256": "4427012e3adc006a1bdb7807ceff481fb8fbe8dac27ac5535c1d90f741331f21",
+        "size": 13255477
+      },
+      "swedish-foss-terminology_20260918-1_all.deb": {
+        "sha256": "29dc78a374c67cb3e74cb313e158357059d844ab0aa35ad0932a9c63094ff2b0",
+        "size": 13572908
+      }
+    }
+  }
+}
