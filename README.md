@@ -2,7 +2,7 @@
 
 RPM packages for Linux tools and apps, published via GitHub Pages.
 
-The repository currently contains **250 RPM packages**, including:
+The repository currently contains **251 RPM packages**, including:
 - ANPR Viewer
 - PaintBrush
 - Signal Lantern
@@ -31,14 +31,15 @@ sudo dnf install signal-lantern
 
 ```bash
 sudo dnf upgrade --refresh svlang
-sudo dnf install swedish-tm swedish-foss-terminology
+sudo dnf install swedish-tm swedish-foss-terminology po-translate
 ```
 
 - `svlang-0.2.0-2.noarch.rpm` includes both lexicons and the corrected language checks.
 - `swedish-tm-20260918-1.noarch.rpm` installs the repaired PO/TMX data in `/usr/share/swedish-tm/`.
 - `swedish-foss-terminology-20260918-1.noarch.rpm` installs the corrected termbank and export script in `/usr/share/swedish-foss-terminology/`.
+- `po-translate-1.6.1-1.noarch.rpm` fixes plural translations and prevents a failed provider response from modifying a catalog.
 
-All three packages are architecture independent and require Python 3.10 or later.
+All four packages are architecture independent and require Python 3.10 or later.
 The svlang launcher uses its private `/usr/share/svlang/` module directory so it
 works across supported Python versions. Optional Hunspell and polib support is
 expressed as recommended dependencies. Source revisions and SHA-256 checksums
