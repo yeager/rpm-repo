@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Verify RPM metadata and every referenced package checksum before publishing."""
+import gzip
 import hashlib
 from pathlib import Path
 import subprocess
@@ -15,7 +16,12 @@ for entry in metadata.findall('r:data', NS):
     checksum = entry.find('r:checksum', NS)
     assert hashlib.new(checksum.get('type'), data).hexdigest() == checksum.text, path
     assert len(data) == int(entry.findtext('r:size', namespaces=NS)), path
-    decoded = subprocess.check_output(['zstd', '-dq', '--stdout', str(path)])
+    if path.suffix == '.zst':
+        decoded = subprocess.check_output(['zstd', '-dq', '--stdout', str(path)])
+    elif path.suffix == '.gz':
+        decoded = gzip.decompress(data)
+    else:
+        decoded = data
     checksum = entry.find('r:open-checksum', NS)
     assert hashlib.new(checksum.get('type'), decoded).hexdigest() == checksum.text, path
     assert len(decoded) == int(entry.findtext('r:open-size', namespaces=NS)), path
