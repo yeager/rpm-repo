@@ -1,0 +1,156 @@
+[
+  {
+    "repo": "yeager/asterisk-prompts-sv",
+    "tag": "v0.1.0-anton",
+    "name": "asterisk-prompt-sv-anton.rpm",
+    "size": 79598517,
+    "url": "https://github.com/yeager/asterisk-prompts-sv/releases/download/v0.1.0-anton/asterisk-prompt-sv-anton.rpm"
+  },
+  {
+    "repo": "yeager/autismapps",
+    "tag": "v0.3.0",
+    "name": "autismappar-0.3.0-1.fc43.noarch.rpm",
+    "size": 18076229,
+    "url": "https://github.com/yeager/autismapps/releases/download/v0.3.0/autismappar-0.3.0-1.fc43.noarch.rpm"
+  },
+  {
+    "repo": "yeager/cve-monitor",
+    "tag": "v0.3.6",
+    "name": "cve-monitor-0.3.6-1.fc43.noarch.rpm",
+    "size": 30686,
+    "url": "https://github.com/yeager/cve-monitor/releases/download/v0.3.6/cve-monitor-0.3.6-1.fc43.noarch.rpm"
+  },
+  {
+    "repo": "yeager/fedora-l10n",
+    "tag": "v0.2.10",
+    "name": "fedora-l10n-0.2.8-1.noarch.rpm",
+    "size": 34665,
+    "url": "https://github.com/yeager/fedora-l10n/releases/download/v0.2.10/fedora-l10n-0.2.8-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/firestaff",
+    "tag": "v3.0.420",
+    "name": "firestaff-3.0.420.aarch64.rpm",
+    "size": 66964480,
+    "url": "https://github.com/yeager/firestaff/releases/download/v3.0.420/firestaff-3.0.420.aarch64.rpm"
+  },
+  {
+    "repo": "yeager/firestaff",
+    "tag": "v3.0.420",
+    "name": "firestaff-3.0.420.x86_64.rpm",
+    "size": 69052166,
+    "url": "https://github.com/yeager/firestaff/releases/download/v3.0.420/firestaff-3.0.420.x86_64.rpm"
+  },
+  {
+    "repo": "yeager/l10n-conv",
+    "tag": "v1.0.9",
+    "name": "l10n-conv-1.0.9-1.noarch.rpm",
+    "size": 30368,
+    "url": "https://github.com/yeager/l10n-conv/releases/download/v1.0.9/l10n-conv-1.0.9-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/OpenCaptive",
+    "tag": "v1.1.127",
+    "name": "opencaptive-1.1.127.x86_64.rpm",
+    "size": 5529219,
+    "url": "https://github.com/yeager/OpenCaptive/releases/download/v1.1.127/opencaptive-1.1.127.x86_64.rpm"
+  },
+  {
+    "repo": "yeager/ordverk",
+    "tag": "v0.4",
+    "name": "ordverk-0.4-1.fc44.noarch.rpm",
+    "size": 1322487,
+    "url": "https://github.com/yeager/ordverk/releases/download/v0.4/ordverk-0.4-1.fc44.noarch.rpm"
+  },
+  {
+    "repo": "yeager/ordverk",
+    "tag": "v0.4",
+    "name": "ordverk-0.4-1.fc44.src.rpm",
+    "size": 1356263,
+    "url": "https://github.com/yeager/ordverk/releases/download/v0.4/ordverk-0.4-1.fc44.src.rpm"
+  },
+  {
+    "repo": "yeager/pcap-viewer",
+    "tag": "v0.2.7",
+    "name": "packetlens-0.2.7-1.noarch.rpm",
+    "size": 58931,
+    "url": "https://github.com/yeager/pcap-viewer/releases/download/v0.2.7/packetlens-0.2.7-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/po-diff",
+    "tag": "v1.0.1",
+    "name": "po-diff-1.0.1-1.noarch.rpm",
+    "size": 25078,
+    "url": "https://github.com/yeager/po-diff/releases/download/v1.0.1/po-diff-1.0.1-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/project-eon",
+    "tag": "v0.1.7",
+    "name": "project-eon-0.1.7-1.x86_64.rpm",
+    "size": 36565040,
+    "url": "https://github.com/yeager/project-eon/releases/download/v0.1.7/project-eon-0.1.7-1.x86_64.rpm"
+  },
+  {
+    "repo": "yeager/ordverk",
+    "tag": "v0.4",
+    "name": "python-l10n-lint-1.21.4-1.fc44.src.rpm",
+    "size": 284140,
+    "url": "https://github.com/yeager/ordverk/releases/download/v0.4/python-l10n-lint-1.21.4-1.fc44.src.rpm"
+  },
+  {
+    "repo": "yeager/ordverk",
+    "tag": "v0.4",
+    "name": "python-svlang-0.2.2-1.fc44.src.rpm",
+    "size": 1040821,
+    "url": "https://github.com/yeager/ordverk/releases/download/v0.4/python-svlang-0.2.2-1.fc44.src.rpm"
+  },
+  {
+    "repo": "yeager/ordverk",
+    "tag": "v0.4",
+    "name": "python3-l10n-lint-1.21.4-1.fc44.noarch.rpm",
+    "size": 177575,
+    "url": "https://github.com/yeager/ordverk/releases/download/v0.4/python3-l10n-lint-1.21.4-1.fc44.noarch.rpm"
+  },
+  {
+    "repo": "yeager/ordverk",
+    "tag": "v0.4",
+    "name": "python3-svlang-0.2.2-1.fc44.noarch.rpm",
+    "size": 899397,
+    "url": "https://github.com/yeager/ordverk/releases/download/v0.4/python3-svlang-0.2.2-1.fc44.noarch.rpm"
+  },
+  {
+    "repo": "yeager/rhvoice-swedish",
+    "tag": "v0.1.0",
+    "name": "rhvoice-language-swedish-0.1.0-1.fc43.noarch.rpm",
+    "size": 19497,
+    "url": "https://github.com/yeager/rhvoice-swedish/releases/download/v0.1.0/rhvoice-language-swedish-0.1.0-1.fc43.noarch.rpm"
+  },
+  {
+    "repo": "yeager/signal-lantern",
+    "tag": "v0.1.0",
+    "name": "signal-lantern-0.1.0-1.fc43.noarch.rpm",
+    "size": 61785,
+    "url": "https://github.com/yeager/signal-lantern/releases/download/v0.1.0/signal-lantern-0.1.0-1.fc43.noarch.rpm"
+  },
+  {
+    "repo": "yeager/signal-lantern",
+    "tag": "v0.1.0",
+    "name": "signal-lantern-0.1.0-1.fc43.src.rpm",
+    "size": 119769,
+    "url": "https://github.com/yeager/signal-lantern/releases/download/v0.1.0/signal-lantern-0.1.0-1.fc43.src.rpm"
+  },
+  {
+    "repo": "yeager/tp-lint",
+    "tag": "v1.8.4",
+    "name": "tp-lint-1.8.4-1.noarch.rpm",
+    "size": 63120,
+    "url": "https://github.com/yeager/tp-lint/releases/download/v1.8.4/tp-lint-1.8.4-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/wifi-analyzer",
+    "tag": "v0.1.31",
+    "name": "wifi-analyzer-0.1.31-1.fc44.noarch.rpm",
+    "size": 334157,
+    "url": "https://github.com/yeager/wifi-analyzer/releases/download/v0.1.31/wifi-analyzer-0.1.31-1.fc44.noarch.rpm"
+  }
+]
