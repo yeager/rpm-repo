@@ -19,7 +19,11 @@ def header(path, source=None):
     ], text=True).strip().split("\t")
     if len(out) != 5:
         raise ValueError(f"Could not parse RPM header: {path}")
-    if source is None:\n        source = path.name.endswith(".src.rpm")\n    if source:\n        out[-1] = "src"\n    return tuple(out)
+    if source is None:
+        source = path.name.endswith(".src.rpm")
+    if source:
+        out[-1] = "src"
+    return tuple(out)
 
 
 def sha256(path):
@@ -29,14 +33,16 @@ def sha256(path):
             h.update(chunk)
     return h.hexdigest()
 
+
 existing = {}
 for path in PACKAGES.glob("*.rpm"):
     existing[header(path)] = path
-changed = False
 for asset in ASSETS:
     name = asset["name"]
-    if not re.fullmatch(r"[A-Za-z0-9._+~-]+\.rpm", name):
+    if not re.fullmatch(r"[A-Za-z0-9._+~-]+\\.rpm", name):
         raise ValueError(f"Unsafe asset filename: {name!r}")
+    if not asset["url"].startswith(f"https://github.com/{asset['repo']}/releases/download/"):
+        raise ValueError(f"Unexpected release URL: {asset['url']}")
     target = PACKAGES / name
     temp = target.with_suffix(target.suffix + ".download")
     request = urllib.request.Request(asset["url"], headers={"User-Agent": "yeager-rpm-repo-import/1"})
@@ -49,7 +55,7 @@ for asset in ASSETS:
     old_path = existing.get(identity)
     if old_path and old_path.name != name:
         if sha256(old_path) != sha256(temp):
-            raise ValueError(f"Conflicting RPM NEVRA {identity}: {old_path.name} and {name}")
+            raise ValueError(f"Conflicting RPM identity {identity}: {old_path.name} and {name}")
         temp.unlink()
         continue
     if target.exists() and sha256(target) == sha256(temp):
@@ -57,13 +63,12 @@ for asset in ASSETS:
         continue
     temp.replace(target)
     existing[identity] = target
-    changed = True
 
 count = len(list(PACKAGES.glob("*.rpm")))
 readme = ROOT / "README.md"
 content = readme.read_text()
-content, n = re.subn(r"currently contains \*\*\d+ RPM packages\*\*", f"currently contains **{count} RPM packages**", content, count=1)
+content, n = re.subn(r"currently contains \\*\\*\\d+ RPM packages\\*\\*", f"currently contains **{count} RPM packages**", content, count=1)
 if n:
     readme.write_text(content)
 subprocess.run(["createrepo_c", "--update", "--general-compress-type", "zstd", str(ROOT)], check=True)
-print(f"Indexed {count} RPMs; changed={changed}")
+print(f"Indexed {count} RPMs")
