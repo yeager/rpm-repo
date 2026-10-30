@@ -13,13 +13,13 @@ PACKAGES = ROOT / "packages"
 PACKAGES.mkdir(exist_ok=True)
 
 
-def header(path):
+def header(path, source=None):
     out = subprocess.check_output([
         "rpm", "-qp", "--qf", "%{NAME}\\t%{EPOCHNUM}\\t%{VERSION}\\t%{RELEASE}\\t%{ARCH}\\n", str(path)
     ], text=True).strip().split("\t")
     if len(out) != 5:
         raise ValueError(f"Could not parse RPM header: {path}")
-    return tuple(out)
+    if source is None:\n        source = path.name.endswith(".src.rpm")\n    if source:\n        out[-1] = "src"\n    return tuple(out)
 
 
 def sha256(path):
@@ -45,7 +45,7 @@ for asset in ASSETS:
             stream.write(chunk)
     if temp.stat().st_size != asset["size"]:
         raise ValueError(f"Size mismatch for {asset['repo']}:{name}")
-    identity = header(temp)
+    identity = header(temp, source=name.endswith(".src.rpm"))
     old_path = existing.get(identity)
     if old_path and old_path.name != name:
         if sha256(old_path) != sha256(temp):
