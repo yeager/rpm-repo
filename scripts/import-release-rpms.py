@@ -70,5 +70,5 @@ content = readme.read_text()
 content, n = re.subn(r"currently contains \*\*\d+ RPM packages\*\*", f"currently contains **{count} RPM packages**", content, count=1)
 if n:
     readme.write_text(content)
-subprocess.run(["createrepo_c", "--update", "--general-compress-type", "zstd", str(ROOT)], check=True)
+subprocess.run(["createrepo_c", "--update", "--general-compress-type", "gz", str(ROOT)], check=True)
 print(f"Indexed {count} RPMs")
