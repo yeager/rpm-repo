@@ -152,5 +152,26 @@
     "name": "wifi-analyzer-0.1.31-1.fc44.noarch.rpm",
     "size": 334157,
     "url": "https://github.com/yeager/wifi-analyzer/releases/download/v0.1.31/wifi-analyzer-0.1.31-1.fc44.noarch.rpm"
+  },
+  {
+    "repo": "yeager/wifi-analyzer",
+    "tag": "v0.1.33",
+    "name": "wifi-analyzer-0.1.33-1.fc44.noarch.rpm",
+    "size": 340895,
+    "url": "https://github.com/yeager/wifi-analyzer/releases/download/v0.1.33/wifi-analyzer-0.1.33-1.fc44.noarch.rpm"
+  },
+  {
+    "repo": "yeager/firestaff",
+    "tag": "v3.0.421",
+    "name": "firestaff-3.0.421.aarch64.rpm",
+    "size": 66976432,
+    "url": "https://github.com/yeager/firestaff/releases/download/v3.0.421/firestaff-3.0.421.aarch64.rpm"
+  },
+  {
+    "repo": "yeager/firestaff",
+    "tag": "v3.0.421",
+    "name": "firestaff-3.0.421.x86_64.rpm",
+    "size": 69059952,
+    "url": "https://github.com/yeager/firestaff/releases/download/v3.0.421/firestaff-3.0.421.x86_64.rpm"
   }
 ]
