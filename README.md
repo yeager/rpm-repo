@@ -6,6 +6,7 @@ The repository currently contains **274 RPM packages**, including:
 - ANPR Viewer
 - PaintBrush
 - Signal Lantern
+- Wi-Fi Analyzer
 - and related localization/development tools
 
 ## Setup
@@ -19,6 +20,15 @@ sudo dnf makecache
 
 ```bash
 sudo dnf install signal-lantern
+```
+
+## Install Wi-Fi Analyzer
+
+The repository provides Wi-Fi Analyzer 0.1.34 for Fedora 44 and compatible
+systems:
+
+```bash
+sudo dnf install wifi-analyzer
 ```
 
 ## Notes
