@@ -39,7 +39,7 @@ for path in PACKAGES.glob("*.rpm"):
     existing[header(path)] = path
 for asset in ASSETS:
     name = asset["name"]
-    if not re.fullmatch(r"[A-Za-z0-9._+~-]+\\.rpm", name):
+    if not re.fullmatch(r"[A-Za-z0-9._+~-]+\.rpm", name):
         raise ValueError(f"Unsafe asset filename: {name!r}")
     if not asset["url"].startswith(f"https://github.com/{asset['repo']}/releases/download/"):
         raise ValueError(f"Unexpected release URL: {asset['url']}")
@@ -67,7 +67,7 @@ for asset in ASSETS:
 count = len(list(PACKAGES.glob("*.rpm")))
 readme = ROOT / "README.md"
 content = readme.read_text()
-content, n = re.subn(r"currently contains \\*\\*\\d+ RPM packages\\*\\*", f"currently contains **{count} RPM packages**", content, count=1)
+content, n = re.subn(r"currently contains \*\*\d+ RPM packages\*\*", f"currently contains **{count} RPM packages**", content, count=1)
 if n:
     readme.write_text(content)
 subprocess.run(["createrepo_c", "--update", "--general-compress-type", "zstd", str(ROOT)], check=True)
