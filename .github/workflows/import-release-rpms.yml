@@ -30,6 +30,8 @@ jobs:
         run: python3 scripts/import-release-rpms.py
       - name: Validate repository
         run: python3 scripts/validate-repo.py
+      - name: Check GitHub Pages artifact size
+        run: python3 scripts/check-pages-size.py
       - name: Commit and push to main
         run: |
           git config user.name "github-actions[bot]"

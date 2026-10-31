@@ -24,7 +24,7 @@ sudo dnf install signal-lantern
 
 ## Install Wi-Fi Analyzer
 
-The repository provides Wi-Fi Analyzer 0.1.34 for Fedora 44 and compatible
+The repository provides Wi-Fi Analyzer 0.1.36 for Fedora 44 and compatible
 systems:
 
 ```bash
@@ -36,6 +36,9 @@ sudo dnf install wifi-analyzer
 - Repository URL: <https://yeager.github.io/rpm-repo>
 - RPM metadata is published under `repodata/`
 - The repository currently includes `signal-lantern-0.1.0-1.fc43.noarch.rpm`
+- GitHub Pages limits a published site to 1 GB. The import and deployment
+  workflows check the generated artifact before publishing; larger archives need
+  a separate package host.
 
 ## Swedish language tools
 

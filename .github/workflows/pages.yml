@@ -25,6 +25,9 @@ jobs:
           sudo apt-get install -y zstd
           python3 scripts/validate-repo.py
 
+      - name: Check GitHub Pages artifact size
+        run: python3 scripts/check-pages-size.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
