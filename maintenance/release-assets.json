@@ -215,5 +215,12 @@
     "name": "firestaff-3.0.426.x86_64.rpm",
     "size": 69209932,
     "url": "https://github.com/yeager/firestaff/releases/download/v3.0.426/firestaff-3.0.426.x86_64.rpm"
+  },
+  {
+    "repo": "yeager/hardware",
+    "tag": "v0.2.1",
+    "name": "hardware-0.2.1-1.noarch.rpm",
+    "size": 300393,
+    "url": "https://github.com/yeager/hardware/releases/download/v0.2.1/hardware-0.2.1-1.noarch.rpm"
   }
 ]
