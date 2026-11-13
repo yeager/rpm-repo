@@ -50,7 +50,7 @@ sudo dnf install swedish-tm swedish-foss-terminology po-translate
 - `svlang-0.2.0-2.noarch.rpm` includes both lexicons and the corrected language checks.
 - `swedish-tm-20260918-1.noarch.rpm` installs the repaired PO/TMX data in `/usr/share/swedish-tm/`.
 - `swedish-foss-terminology-20260918-1.noarch.rpm` installs the corrected termbank and export script in `/usr/share/swedish-foss-terminology/`.
-- `po-translate-1.6.1-1.noarch.rpm` fixes plural translations and prevents a failed provider response from modifying a catalog.
+- `po-translate-1.6.2-1.noarch.rpm` contains the current DeepL compatibility updates.
 
 All four packages are architecture independent and require Python 3.10 or later.
 The svlang launcher uses its private `/usr/share/svlang/` module directory so it
