@@ -222,5 +222,12 @@
     "name": "hardware-0.2.1-1.noarch.rpm",
     "size": 300393,
     "url": "https://github.com/yeager/hardware/releases/download/v0.2.1/hardware-0.2.1-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/po-translate",
+    "tag": "v1.6.2",
+    "name": "po-translate-1.6.2-1.noarch.rpm",
+    "size": 24965,
+    "url": "https://github.com/yeager/po-translate/releases/download/v1.6.2/po-translate-1.6.2-1.noarch.rpm"
   }
 ]
