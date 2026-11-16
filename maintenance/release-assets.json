@@ -229,5 +229,13 @@
     "name": "po-translate-1.6.2-1.noarch.rpm",
     "size": 24965,
     "url": "https://github.com/yeager/po-translate/releases/download/v1.6.2/po-translate-1.6.2-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/l10n-lint",
+    "tag": "v1.23.34",
+    "name": "l10n-lint-1.23.34-1.fc44.noarch.rpm",
+    "size": 74773,
+    "url": "https://github.com/yeager/l10n-lint/releases/download/v1.23.34/l10n-lint-1.23.34-1.fc44.noarch.rpm",
+    "sha256": "88c904479213363fbda1b81da65b54474ec570729367bf368a9753c7bbaa618d"
   }
 ]
