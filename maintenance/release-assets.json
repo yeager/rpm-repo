@@ -237,5 +237,13 @@
     "size": 74773,
     "url": "https://github.com/yeager/l10n-lint/releases/download/v1.23.34/l10n-lint-1.23.34-1.fc44.noarch.rpm",
     "sha256": "88c904479213363fbda1b81da65b54474ec570729367bf368a9753c7bbaa618d"
+  },
+  {
+    "repo": "yeager/svlang",
+    "tag": "v0.3.0",
+    "name": "svlang-0.3.0-1.fc44.noarch.rpm",
+    "size": 857528,
+    "url": "https://github.com/yeager/svlang/releases/download/v0.3.0/svlang-0.3.0-1.fc44.noarch.rpm",
+    "sha256": "a9f7de3988077a19e98c5afa1d920c10bcc6d545675008c17c1f4bce94c8bed4"
   }
 ]
