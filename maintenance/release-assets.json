@@ -245,5 +245,13 @@
     "size": 857528,
     "url": "https://github.com/yeager/svlang/releases/download/v0.3.0/svlang-0.3.0-1.fc44.noarch.rpm",
     "sha256": "a9f7de3988077a19e98c5afa1d920c10bcc6d545675008c17c1f4bce94c8bed4"
+  },
+  {
+    "repo": "yeager/hunspell-sv",
+    "tag": "v2026.11.16",
+    "name": "hunspell-sv-2026.11.16-1.noarch.rpm",
+    "size": 2053739,
+    "url": "https://github.com/yeager/hunspell-sv/releases/download/v2026.11.16/hunspell-sv-2026.11.16-1.noarch.rpm",
+    "sha256": "2552e2c4245698b8d8433d28f4a0c2ce923a23309fc1bb994e711519b5afdda1"
   }
 ]
