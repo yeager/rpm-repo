@@ -31,6 +31,12 @@ systems:
 sudo dnf install wifi-analyzer
 ```
 
+## Install GnoMojo
+
+```bash
+sudo dnf install gnomojo
+```
+
 ## Notes
 
 - Repository URL: <https://yeager.github.io/rpm-repo>
