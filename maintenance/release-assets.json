@@ -253,5 +253,19 @@
     "size": 2053739,
     "url": "https://github.com/yeager/hunspell-sv/releases/download/v2026.11.16/hunspell-sv-2026.11.16-1.noarch.rpm",
     "sha256": "2552e2c4245698b8d8433d28f4a0c2ce923a23309fc1bb994e711519b5afdda1"
+  },
+  {
+    "repo": "yeager/iphone-import",
+    "tag": "v0.1.0",
+    "name": "iphone-import-0.1.0-1.noarch.rpm",
+    "size": 25093,
+    "url": "https://github.com/yeager/iphone-import/releases/download/v0.1.0/iphone-import-0.1.0-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/gnome-cloud-sync",
+    "tag": "v0.4.2",
+    "name": "ubuntu-cloud-sync-0.4.2-1.noarch.rpm",
+    "size": 32925,
+    "url": "https://github.com/yeager/gnome-cloud-sync/releases/download/v0.4.2/ubuntu-cloud-sync-0.4.2-1.noarch.rpm"
   }
 ]
