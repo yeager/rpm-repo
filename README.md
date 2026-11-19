@@ -2,7 +2,7 @@
 
 RPM packages for Linux tools and apps, published via GitHub Pages.
 
-The repository currently contains **294 RPM packages**, including:
+The repository currently contains **295 RPM packages**, including:
 - ANPR Viewer
 - PaintBrush
 - Signal Lantern
