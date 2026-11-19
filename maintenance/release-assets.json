@@ -42,11 +42,83 @@
     "url": "https://github.com/yeager/firestaff/releases/download/v3.0.420/firestaff-3.0.420.x86_64.rpm"
   },
   {
+    "repo": "yeager/firestaff",
+    "tag": "v3.0.421",
+    "name": "firestaff-3.0.421.aarch64.rpm",
+    "size": 66976432,
+    "url": "https://github.com/yeager/firestaff/releases/download/v3.0.421/firestaff-3.0.421.aarch64.rpm"
+  },
+  {
+    "repo": "yeager/firestaff",
+    "tag": "v3.0.421",
+    "name": "firestaff-3.0.421.x86_64.rpm",
+    "size": 69059952,
+    "url": "https://github.com/yeager/firestaff/releases/download/v3.0.421/firestaff-3.0.421.x86_64.rpm"
+  },
+  {
+    "repo": "yeager/firestaff",
+    "tag": "v3.0.426",
+    "name": "firestaff-3.0.426.aarch64.rpm",
+    "size": 67127070,
+    "url": "https://github.com/yeager/firestaff/releases/download/v3.0.426/firestaff-3.0.426.aarch64.rpm"
+  },
+  {
+    "repo": "yeager/firestaff",
+    "tag": "v3.0.426",
+    "name": "firestaff-3.0.426.x86_64.rpm",
+    "size": 69209932,
+    "url": "https://github.com/yeager/firestaff/releases/download/v3.0.426/firestaff-3.0.426.x86_64.rpm"
+  },
+  {
+    "repo": "yeager/gnome-cloud-sync",
+    "tag": "v0.4.2",
+    "name": "ubuntu-cloud-sync-0.4.2-1.noarch.rpm",
+    "size": 32925,
+    "url": "https://github.com/yeager/gnome-cloud-sync/releases/download/v0.4.2/ubuntu-cloud-sync-0.4.2-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/hardware",
+    "tag": "v0.2.1",
+    "name": "hardware-0.2.1-1.noarch.rpm",
+    "size": 300393,
+    "url": "https://github.com/yeager/hardware/releases/download/v0.2.1/hardware-0.2.1-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/hunspell-sv",
+    "tag": "v2026.11.16",
+    "name": "hunspell-sv-2026.11.16-1.noarch.rpm",
+    "size": 2053739,
+    "url": "https://github.com/yeager/hunspell-sv/releases/download/v2026.11.16/hunspell-sv-2026.11.16-1.noarch.rpm",
+    "sha256": "2552e2c4245698b8d8433d28f4a0c2ce923a23309fc1bb994e711519b5afdda1"
+  },
+  {
+    "repo": "yeager/iphone-import",
+    "tag": "v0.1.0",
+    "name": "iphone-import-0.1.0-1.noarch.rpm",
+    "size": 25093,
+    "url": "https://github.com/yeager/iphone-import/releases/download/v0.1.0/iphone-import-0.1.0-1.noarch.rpm"
+  },
+  {
     "repo": "yeager/l10n-conv",
     "tag": "v1.0.9",
     "name": "l10n-conv-1.0.9-1.noarch.rpm",
     "size": 30368,
     "url": "https://github.com/yeager/l10n-conv/releases/download/v1.0.9/l10n-conv-1.0.9-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/l10n-lint",
+    "tag": "v1.23.34",
+    "name": "l10n-lint-1.23.34-1.fc44.noarch.rpm",
+    "size": 74773,
+    "url": "https://github.com/yeager/l10n-lint/releases/download/v1.23.34/l10n-lint-1.23.34-1.fc44.noarch.rpm",
+    "sha256": "88c904479213363fbda1b81da65b54474ec570729367bf368a9753c7bbaa618d"
+  },
+  {
+    "repo": "yeager/levande-screensaver",
+    "tag": "v0.1.0",
+    "name": "levande-screensaver-0.1.0-1.noarch.rpm",
+    "size": 5115061,
+    "url": "https://github.com/yeager/levande-screensaver/releases/download/v0.1.0/levande-screensaver-0.1.0-1.noarch.rpm"
   },
   {
     "repo": "yeager/OpenCaptive",
@@ -68,27 +140,6 @@
     "name": "ordverk-0.4-1.fc44.src.rpm",
     "size": 1356263,
     "url": "https://github.com/yeager/ordverk/releases/download/v0.4/ordverk-0.4-1.fc44.src.rpm"
-  },
-  {
-    "repo": "yeager/pcap-viewer",
-    "tag": "v0.2.7",
-    "name": "packetlens-0.2.7-1.noarch.rpm",
-    "size": 58931,
-    "url": "https://github.com/yeager/pcap-viewer/releases/download/v0.2.7/packetlens-0.2.7-1.noarch.rpm"
-  },
-  {
-    "repo": "yeager/po-diff",
-    "tag": "v1.0.1",
-    "name": "po-diff-1.0.1-1.noarch.rpm",
-    "size": 25078,
-    "url": "https://github.com/yeager/po-diff/releases/download/v1.0.1/po-diff-1.0.1-1.noarch.rpm"
-  },
-  {
-    "repo": "yeager/project-eon",
-    "tag": "v0.1.7",
-    "name": "project-eon-0.1.7-1.x86_64.rpm",
-    "size": 36565040,
-    "url": "https://github.com/yeager/project-eon/releases/download/v0.1.7/project-eon-0.1.7-1.x86_64.rpm"
   },
   {
     "repo": "yeager/ordverk",
@@ -119,6 +170,41 @@
     "url": "https://github.com/yeager/ordverk/releases/download/v0.4/python3-svlang-0.2.2-1.fc44.noarch.rpm"
   },
   {
+    "repo": "yeager/pcap-viewer",
+    "tag": "v0.2.7",
+    "name": "packetlens-0.2.7-1.noarch.rpm",
+    "size": 58931,
+    "url": "https://github.com/yeager/pcap-viewer/releases/download/v0.2.7/packetlens-0.2.7-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/pcap-viewer",
+    "tag": "v0.2.8",
+    "name": "packetlens-0.2.8-1.noarch.rpm",
+    "size": 59453,
+    "url": "https://github.com/yeager/pcap-viewer/releases/download/v0.2.8/packetlens-0.2.8-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/po-diff",
+    "tag": "v1.0.1",
+    "name": "po-diff-1.0.1-1.noarch.rpm",
+    "size": 25078,
+    "url": "https://github.com/yeager/po-diff/releases/download/v1.0.1/po-diff-1.0.1-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/po-translate",
+    "tag": "v1.6.2",
+    "name": "po-translate-1.6.2-1.noarch.rpm",
+    "size": 24965,
+    "url": "https://github.com/yeager/po-translate/releases/download/v1.6.2/po-translate-1.6.2-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/project-eon",
+    "tag": "v0.1.7",
+    "name": "project-eon-0.1.7-1.x86_64.rpm",
+    "size": 36565040,
+    "url": "https://github.com/yeager/project-eon/releases/download/v0.1.7/project-eon-0.1.7-1.x86_64.rpm"
+  },
+  {
     "repo": "yeager/rhvoice-swedish",
     "tag": "v0.1.0",
     "name": "rhvoice-language-swedish-0.1.0-1.fc43.noarch.rpm",
@@ -140,6 +226,14 @@
     "url": "https://github.com/yeager/signal-lantern/releases/download/v0.1.0/signal-lantern-0.1.0-1.fc43.src.rpm"
   },
   {
+    "repo": "yeager/svlang",
+    "tag": "v0.3.0",
+    "name": "svlang-0.3.0-1.fc44.noarch.rpm",
+    "size": 857528,
+    "url": "https://github.com/yeager/svlang/releases/download/v0.3.0/svlang-0.3.0-1.fc44.noarch.rpm",
+    "sha256": "a9f7de3988077a19e98c5afa1d920c10bcc6d545675008c17c1f4bce94c8bed4"
+  },
+  {
     "repo": "yeager/tp-lint",
     "tag": "v1.8.4",
     "name": "tp-lint-1.8.4-1.noarch.rpm",
@@ -159,20 +253,6 @@
     "name": "wifi-analyzer-0.1.33-1.fc44.noarch.rpm",
     "size": 340895,
     "url": "https://github.com/yeager/wifi-analyzer/releases/download/v0.1.33/wifi-analyzer-0.1.33-1.fc44.noarch.rpm"
-  },
-  {
-    "repo": "yeager/firestaff",
-    "tag": "v3.0.421",
-    "name": "firestaff-3.0.421.aarch64.rpm",
-    "size": 66976432,
-    "url": "https://github.com/yeager/firestaff/releases/download/v3.0.421/firestaff-3.0.421.aarch64.rpm"
-  },
-  {
-    "repo": "yeager/firestaff",
-    "tag": "v3.0.421",
-    "name": "firestaff-3.0.421.x86_64.rpm",
-    "size": 69059952,
-    "url": "https://github.com/yeager/firestaff/releases/download/v3.0.421/firestaff-3.0.421.x86_64.rpm"
   },
   {
     "repo": "yeager/wifi-analyzer",
@@ -201,78 +281,5 @@
     "name": "wifi-analyzer-0.1.37-1.fc44.noarch.rpm",
     "size": 343679,
     "url": "https://github.com/yeager/wifi-analyzer/releases/download/v0.1.37/wifi-analyzer-0.1.37-1.fc44.noarch.rpm"
-  },
-  {
-    "repo": "yeager/firestaff",
-    "tag": "v3.0.426",
-    "name": "firestaff-3.0.426.aarch64.rpm",
-    "size": 67127070,
-    "url": "https://github.com/yeager/firestaff/releases/download/v3.0.426/firestaff-3.0.426.aarch64.rpm"
-  },
-  {
-    "repo": "yeager/firestaff",
-    "tag": "v3.0.426",
-    "name": "firestaff-3.0.426.x86_64.rpm",
-    "size": 69209932,
-    "url": "https://github.com/yeager/firestaff/releases/download/v3.0.426/firestaff-3.0.426.x86_64.rpm"
-  },
-  {
-    "repo": "yeager/hardware",
-    "tag": "v0.2.1",
-    "name": "hardware-0.2.1-1.noarch.rpm",
-    "size": 300393,
-    "url": "https://github.com/yeager/hardware/releases/download/v0.2.1/hardware-0.2.1-1.noarch.rpm"
-  },
-  {
-    "repo": "yeager/po-translate",
-    "tag": "v1.6.2",
-    "name": "po-translate-1.6.2-1.noarch.rpm",
-    "size": 24965,
-    "url": "https://github.com/yeager/po-translate/releases/download/v1.6.2/po-translate-1.6.2-1.noarch.rpm"
-  },
-  {
-    "repo": "yeager/l10n-lint",
-    "tag": "v1.23.34",
-    "name": "l10n-lint-1.23.34-1.fc44.noarch.rpm",
-    "size": 74773,
-    "url": "https://github.com/yeager/l10n-lint/releases/download/v1.23.34/l10n-lint-1.23.34-1.fc44.noarch.rpm",
-    "sha256": "88c904479213363fbda1b81da65b54474ec570729367bf368a9753c7bbaa618d"
-  },
-  {
-    "repo": "yeager/svlang",
-    "tag": "v0.3.0",
-    "name": "svlang-0.3.0-1.fc44.noarch.rpm",
-    "size": 857528,
-    "url": "https://github.com/yeager/svlang/releases/download/v0.3.0/svlang-0.3.0-1.fc44.noarch.rpm",
-    "sha256": "a9f7de3988077a19e98c5afa1d920c10bcc6d545675008c17c1f4bce94c8bed4"
-  },
-  {
-    "repo": "yeager/hunspell-sv",
-    "tag": "v2026.11.16",
-    "name": "hunspell-sv-2026.11.16-1.noarch.rpm",
-    "size": 2053739,
-    "url": "https://github.com/yeager/hunspell-sv/releases/download/v2026.11.16/hunspell-sv-2026.11.16-1.noarch.rpm",
-    "sha256": "2552e2c4245698b8d8433d28f4a0c2ce923a23309fc1bb994e711519b5afdda1"
-  },
-  {
-    "repo": "yeager/iphone-import",
-    "tag": "v0.1.0",
-    "name": "iphone-import-0.1.0-1.noarch.rpm",
-    "size": 25093,
-    "url": "https://github.com/yeager/iphone-import/releases/download/v0.1.0/iphone-import-0.1.0-1.noarch.rpm"
-  },
-  {
-    "repo": "yeager/gnome-cloud-sync",
-    "tag": "v0.4.2",
-    "name": "ubuntu-cloud-sync-0.4.2-1.noarch.rpm",
-    "size": 32925,
-    "url": "https://github.com/yeager/gnome-cloud-sync/releases/download/v0.4.2/ubuntu-cloud-sync-0.4.2-1.noarch.rpm"
-  },
-  {
-    "repo": "yeager/pcap-viewer",
-    "tag": "v0.2.8",
-    "name": "packetlens-0.2.8-1.noarch.rpm",
-    "size": 59453,
-    "url": "https://github.com/yeager/pcap-viewer/releases/download/v0.2.8/packetlens-0.2.8-1.noarch.rpm"
   }
 ]
