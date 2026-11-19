@@ -289,5 +289,13 @@
     "size": 4949025,
     "url": "https://github.com/yeager/rpm-repo/releases/download/gnomojo-v1.0.1/gnomojo-1.0.1-1.noarch.rpm",
     "sha256": "0d6fa9e9582657ba33d2ae10e3886b1775ec7aad314c0b42ab9621d50ad50356"
+  },
+  {
+    "repo": "yeager/rpm-repo",
+    "tag": "gnomojo-v1.0.2",
+    "name": "gnomojo-1.0.2-1.noarch.rpm",
+    "size": 5369183,
+    "url": "https://github.com/yeager/rpm-repo/releases/download/gnomojo-v1.0.2/gnomojo-1.0.2-1.noarch.rpm",
+    "sha256": "3ad3324c1126c38876eb2ab93388e16ec6609a19688039da35883c97c8b5dfa0"
   }
 ]
