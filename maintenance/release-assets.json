@@ -267,5 +267,12 @@
     "name": "ubuntu-cloud-sync-0.4.2-1.noarch.rpm",
     "size": 32925,
     "url": "https://github.com/yeager/gnome-cloud-sync/releases/download/v0.4.2/ubuntu-cloud-sync-0.4.2-1.noarch.rpm"
+  },
+  {
+    "repo": "yeager/pcap-viewer",
+    "tag": "v0.2.8",
+    "name": "packetlens-0.2.8-1.noarch.rpm",
+    "size": 59453,
+    "url": "https://github.com/yeager/pcap-viewer/releases/download/v0.2.8/packetlens-0.2.8-1.noarch.rpm"
   }
 ]
