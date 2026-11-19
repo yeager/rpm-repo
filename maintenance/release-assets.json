@@ -281,5 +281,13 @@
     "name": "wifi-analyzer-0.1.37-1.fc44.noarch.rpm",
     "size": 343679,
     "url": "https://github.com/yeager/wifi-analyzer/releases/download/v0.1.37/wifi-analyzer-0.1.37-1.fc44.noarch.rpm"
+  },
+  {
+    "repo": "yeager/rpm-repo",
+    "tag": "gnomojo-v1.0.1",
+    "name": "gnomojo-1.0.1-1.noarch.rpm",
+    "size": 4949025,
+    "url": "https://github.com/yeager/rpm-repo/releases/download/gnomojo-v1.0.1/gnomojo-1.0.1-1.noarch.rpm",
+    "sha256": "0d6fa9e9582657ba33d2ae10e3886b1775ec7aad314c0b42ab9621d50ad50356"
   }
 ]
