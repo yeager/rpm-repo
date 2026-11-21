@@ -2,7 +2,7 @@
 
 RPM packages for Linux tools and apps, published via GitHub Pages.
 
-The repository currently contains **300 RPM packages**, including:
+The repository currently contains **301 RPM packages**, including:
 - ANPR Viewer
 - PaintBrush
 - Signal Lantern
@@ -35,6 +35,14 @@ sudo dnf install wifi-analyzer
 
 ```bash
 sudo dnf install gnomojo
+```
+
+## Install Axels spel
+
+The x86_64 preview requires glibc 2.44.
+
+```bash
+sudo dnf install axels-spel
 ```
 
 ## Notes
