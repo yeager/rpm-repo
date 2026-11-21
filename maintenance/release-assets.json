@@ -361,5 +361,13 @@
     "size": 16099680,
     "url": "https://github.com/yeager/rpm-repo/releases/download/gnomojo-v1.0.11/gnomojo-1.0.11-1.noarch.rpm",
     "sha256": "1a20dae973fe4072d540cb6772fa4f1c65233b8aae1610b73ac3f5ff2a62f86b"
+  },
+  {
+    "repo": "yeager/po-translate",
+    "tag": "v1.6.3",
+    "name": "po-translate-1.6.3-1.noarch.rpm",
+    "size": 25297,
+    "url": "https://github.com/yeager/po-translate/releases/download/v1.6.3/po-translate-1.6.3-1.noarch.rpm",
+    "sha256": "28ea6b9cc4d30d229b99b022ccd36c18974335dae8ea2f3c08d239f99bb4a60f"
   }
 ]
