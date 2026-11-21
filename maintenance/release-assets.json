@@ -369,5 +369,29 @@
     "size": 25297,
     "url": "https://github.com/yeager/po-translate/releases/download/v1.6.3/po-translate-1.6.3-1.noarch.rpm",
     "sha256": "28ea6b9cc4d30d229b99b022ccd36c18974335dae8ea2f3c08d239f99bb4a60f"
+  },
+  {
+    "repo": "yeager/hardware",
+    "tag": "v0.2.2",
+    "name": "hardware-0.2.2-1.noarch.rpm",
+    "size": 300302,
+    "url": "https://github.com/yeager/hardware/releases/download/v0.2.2/hardware-0.2.2-1.noarch.rpm",
+    "sha256": "4c5e8911b3e6a146e0c442c3a36c88f02a087a6424c84d524a189d49218574b7"
+  },
+  {
+    "repo": "yeager/log-viewer",
+    "tag": "v0.1.5",
+    "name": "log-viewer-0.1.5-1.noarch.rpm",
+    "size": 17166,
+    "url": "https://github.com/yeager/log-viewer/releases/download/v0.1.5/log-viewer-0.1.5-1.noarch.rpm",
+    "sha256": "3bac43966432070f192a4ee7b0e4861b20244bae76f943cbf5c427f617a55233"
+  },
+  {
+    "repo": "yeager/pcap-viewer",
+    "tag": "v0.2.9",
+    "name": "packetlens-0.2.9-1.noarch.rpm",
+    "size": 59569,
+    "url": "https://github.com/yeager/pcap-viewer/releases/download/v0.2.9/packetlens-0.2.9-1.noarch.rpm",
+    "sha256": "1f96f70c5d30a7a519fa1c05b171f51e86f170272fcc1ee4eb46889f4c747ddb"
   }
 ]
