@@ -393,5 +393,13 @@
     "size": 59569,
     "url": "https://github.com/yeager/pcap-viewer/releases/download/v0.2.9/packetlens-0.2.9-1.noarch.rpm",
     "sha256": "1f96f70c5d30a7a519fa1c05b171f51e86f170272fcc1ee4eb46889f4c747ddb"
+  },
+  {
+    "repo": "yeager/gnomojo",
+    "tag": "v1.0.12",
+    "name": "gnomojo-1.0.12-1.noarch.rpm",
+    "size": 16099748,
+    "url": "https://github.com/yeager/gnomojo/releases/download/v1.0.12/gnomojo-1.0.12-1.noarch.rpm",
+    "sha256": "738561d4c8035a5daad30b680f4eb51791187033c6405197645482eb5d286758"
   }
 ]
