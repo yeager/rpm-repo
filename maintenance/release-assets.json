@@ -406,9 +406,9 @@
     "repo": "yeager/system-monitor-extension",
     "tag": "v1.0.1",
     "name": "gnome-shell-extension-system-monitor-1.0.1-1.noarch.rpm",
-    "size": 14376,
+    "size": 14440,
     "url": "https://github.com/yeager/system-monitor-extension/releases/download/v1.0.1/gnome-shell-extension-system-monitor-1.0.1-1.noarch.rpm",
-    "sha256": "b1cb38f65bd3226878bf91b06bc222658e129b05339ea30861144dc236617bad"
+    "sha256": "1e1a8fd6c33f68c994971ab3035ffa203b7774e662f803329643f8075763dd42"
   },
   {
     "repo": "yeager/sysinfo-gtk",
