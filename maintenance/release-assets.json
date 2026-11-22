@@ -401,5 +401,13 @@
     "size": 16099748,
     "url": "https://github.com/yeager/rpm-repo/releases/download/gnomojo-v1.0.12/gnomojo-1.0.12-1.noarch.rpm",
     "sha256": "738561d4c8035a5daad30b680f4eb51791187033c6405197645482eb5d286758"
+  },
+  {
+    "repo": "yeager/system-monitor-extension",
+    "tag": "v1.0.1",
+    "name": "gnome-shell-extension-system-monitor-1.0.1-1.noarch.rpm",
+    "size": 14376,
+    "url": "https://github.com/yeager/system-monitor-extension/releases/download/v1.0.1/gnome-shell-extension-system-monitor-1.0.1-1.noarch.rpm",
+    "sha256": "b1cb38f65bd3226878bf91b06bc222658e129b05339ea30861144dc236617bad"
   }
 ]
