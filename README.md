@@ -86,3 +86,9 @@ The builder produces both RPM v4 packages and matching DEB packages. No
 host-specific Python bytecode or backup files are included. Regenerate repository
 metadata with `createrepo_c --update .`, then validate with
 `python3 scripts/validate-repo.py` (requires `zstd`) before committing to `main`.
+
+## Install SysInfo GTK
+
+```sh
+sudo dnf install sysinfo-gtk
+```
