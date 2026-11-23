@@ -92,3 +92,14 @@ metadata with `createrepo_c --update .`, then validate with
 ```sh
 sudo dnf install sysinfo-gtk
 ```
+
+## GNOME System Monitor
+
+Version **1.0.3** is available in this repository for GNOME Shell 49 and newer. It provides five-minute CPU, memory, and network graphs. High-usage notifications share a compact `level · source · value` format and appear after the load remains high for 10 seconds.
+
+```sh
+sudo dnf install gnome-shell-extension-system-monitor
+```
+
+The release also includes a Debian package and standalone GNOME extension bundle: [v1.0.3 release](https://github.com/yeager/system-monitor-extension/releases/tag/v1.0.3).
+
