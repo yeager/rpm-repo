@@ -413,5 +413,21 @@
     "size": 1358237,
     "url": "https://github.com/yeager/ordverk/releases/download/v0.5/ordverk-0.5-1.fc44.src.rpm",
     "sha256": "36d3f9ab29f4d13d361a20492a0a628d042041b779e3640759b39c8bfb3714a7"
+  },
+  {
+    "repo": "yeager/ordverk",
+    "tag": "v0.6",
+    "name": "ordverk-0.6-1.fc44.noarch.rpm",
+    "size": 1324640,
+    "url": "https://github.com/yeager/ordverk/releases/download/v0.6/ordverk-0.6-1.fc44.noarch.rpm",
+    "sha256": "649ef73c680b00fc537f38702a049a099746a7c402ba4c594b62a2ecc89e814f"
+  },
+  {
+    "repo": "yeager/ordverk",
+    "tag": "v0.6",
+    "name": "ordverk-0.6-1.fc44.src.rpm",
+    "size": 1359411,
+    "url": "https://github.com/yeager/ordverk/releases/download/v0.6/ordverk-0.6-1.fc44.src.rpm",
+    "sha256": "e780b5a4084275b36c5e939edc3fc50693e6a78935575ce675d169de55ccd651"
   }
 ]
