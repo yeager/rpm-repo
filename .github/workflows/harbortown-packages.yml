@@ -1,0 +1,46 @@
+name: Mirror Harbor Town Rollabout packages
+on:
+  schedule:
+    - cron: '19 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: harbortown-release-mirror
+jobs:
+  mirror:
+    runs-on: ubuntu-24.04
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SOURCE: yeager/harbortownrollabout
+    steps:
+      - name: Copy each published Linux package and portable archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "$GITHUB_REPOSITORY" in
+            yeager/deb-repo) ext=deb ;;
+            yeager/rpm-repo) ext=rpm ;;
+            *) exit 1 ;;
+          esac
+          gh api --paginate "repos/$SOURCE/releases" --jq '.[] | select(.draft == false) | .tag_name' > tags
+          while IFS= read -r tag; do
+            [[ $tag =~ ^v[0-9]+\.[0-9]+\.[0-9]+(-ci\.[0-9]+)?$ ]] || continue
+            mirror="harbortownrollabout-$tag"
+            filter='.assets[] | select((.name | endswith("." + $ext)) or (.name | endswith(".tar.gz"))) | [.name,.digest] | @tsv'
+            gh api "repos/$SOURCE/releases/tags/$tag" | jq -r --arg ext "$ext" "$filter" | sort > expected
+            [[ -s expected ]] || continue
+            if gh release view "$mirror" -R "$GITHUB_REPOSITORY" --json isDraft --jq '.isDraft' > draft; then
+              gh api "repos/$GITHUB_REPOSITORY/releases/tags/$mirror" | jq -r --arg ext "$ext" "$filter" | sort > actual
+              if cmp -s expected actual && grep -qx false draft; then continue; fi
+            else
+              gh release create "$mirror" -R "$GITHUB_REPOSITORY" --draft --latest=false --title "Harbor Town Rollabout $tag" --notes "Packages from https://github.com/$SOURCE/releases/tag/$tag"
+            fi
+            dir=$(mktemp -d "$RUNNER_TEMP/harbortown.XXXXXX")
+            gh release download "$tag" -R "$SOURCE" -p "*.$ext" -p '*.tar.gz' -D "$dir"
+            while IFS=$'\t' read -r file digest; do
+              echo "${digest#sha256:}  $dir/$file" | sha256sum -c
+            done < expected
+            gh release upload "$mirror" -R "$GITHUB_REPOSITORY" --clobber "$dir"/*
+            gh release edit "$mirror" -R "$GITHUB_REPOSITORY" --draft=false --latest=false
+          done < tags
