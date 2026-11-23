@@ -401,38 +401,6 @@
   {
     "repo": "yeager/ordverk",
     "tag": "v0.5",
-    "name": "python3-l10n-lint-1.21.4-1.fc44.noarch.rpm",
-    "size": 177731,
-    "url": "https://github.com/yeager/ordverk/releases/download/v0.5/python3-l10n-lint-1.21.4-1.fc44.noarch.rpm",
-    "sha256": "84acc6e29337f5bb5225a376323cf2f10206d8c7e03be82f35608f48473dd786"
-  },
-  {
-    "repo": "yeager/ordverk",
-    "tag": "v0.5",
-    "name": "python3-svlang-0.2.2-1.fc44.noarch.rpm",
-    "size": 899429,
-    "url": "https://github.com/yeager/ordverk/releases/download/v0.5/python3-svlang-0.2.2-1.fc44.noarch.rpm",
-    "sha256": "b83588ea41eaa1b328a4b6e83666cb45665fd716dc9d0e737e0558c98213015f"
-  },
-  {
-    "repo": "yeager/ordverk",
-    "tag": "v0.5",
-    "name": "python-l10n-lint-1.21.4-1.fc44.src.rpm",
-    "size": 284176,
-    "url": "https://github.com/yeager/ordverk/releases/download/v0.5/python-l10n-lint-1.21.4-1.fc44.src.rpm",
-    "sha256": "d35f79047b5462eecf3f66e89b0103962447035821829f50de4f5a25908cbd10"
-  },
-  {
-    "repo": "yeager/ordverk",
-    "tag": "v0.5",
-    "name": "python-svlang-0.2.2-1.fc44.src.rpm",
-    "size": 1040857,
-    "url": "https://github.com/yeager/ordverk/releases/download/v0.5/python-svlang-0.2.2-1.fc44.src.rpm",
-    "sha256": "9675f7818f13ed864cc337f95182cb57ac47fd96568590bb4762a7b5d502924e"
-  },
-  {
-    "repo": "yeager/ordverk",
-    "tag": "v0.5",
     "name": "ordverk-0.5-1.fc44.noarch.rpm",
     "size": 1324103,
     "url": "https://github.com/yeager/ordverk/releases/download/v0.5/ordverk-0.5-1.fc44.noarch.rpm",
